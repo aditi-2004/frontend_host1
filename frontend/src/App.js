@@ -15,7 +15,7 @@ function App() {
   const fetchMessage = async () => {
     try {
       const response = await fetch('https://backend-host1.onrender.com');
-      console.log('Response:', response);
+      // console.log('Response:', response);
       
       const data = await response.json();
       setMessage(data.message);
